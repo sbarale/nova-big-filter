@@ -1,6 +1,6 @@
 <template>
     <div v-if="filters.length > 0" class="bg-30 border-b border-60">
-        <scroll-wrap :height="card.filterMaxHeight ? card.filterMaxHeight : 350">
+        <div :height="card.filterMaxHeight ? card.filterMaxHeight : 350">
             <div v-if="! card.filterHideTitle" class="py-2 w-full block text-xs uppercase tracking-wide text-center text-80 dim font-bold focus:outline-none">
                 {{this.card.filterMenuTitle ? this.card.filterMenuTitle : 'Filter Menu'}}
             </div>
@@ -72,7 +72,7 @@
                 </button>
             </div>
 
-        </scroll-wrap>
+        </div>
     </div>
 </template>
 
